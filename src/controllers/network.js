@@ -123,6 +123,6 @@ exports.getNetWorkActivity = async () => {
         return error.response.data
     })
 
-    return "hello"
+    return result
 
 }

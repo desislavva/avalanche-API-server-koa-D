@@ -1,4 +1,4 @@
-const koaRouter = require('@koa/router')
+const koaRouter = require('koa-router');
 
 const blocks = require('../controllers/blocks');
 const transactions = require('../controllers/transactions');
