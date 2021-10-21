@@ -4,7 +4,7 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "nodemon server.js",
     "test": "jest"
   },
   "author": "",
@@ -19,6 +19,8 @@
     "koa-router": "^10.1.1",
     "nodemon": "^2.0.14",
     "path": "^0.12.7",
+    "swagger2": "^3.0.0",
+    "swagger2-koa": "^3.0.0",
     "web3-utils": "^1.6.0",
     "ws": "^8.2.3"
   }

@@ -1,6 +1,6 @@
 openapi: '3.0.0'
 info: {
- title: 'Avalanche server API - Hapi',
+ title: 'Avalanche server API - Koa',
  version: '1.0.0',
  description: 'Avalanche Api for interacting with node'
 }

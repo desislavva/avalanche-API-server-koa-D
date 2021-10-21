@@ -3,6 +3,10 @@ const Routes = require('./src/routes/routes')
 
 require('./websocket-server');
 
+const swagger = require('swagger2');
+const {ui, validate} = require('swagger2-koa')
+const swaggerDocument = swagger.loadDocumentSync('./openapi/openapi.yml')
+
 
 const app = new Koa()
 
@@ -23,5 +27,6 @@ app.use( async (ctx, next) => {
 
 app.use(Routes.routes())
   .use(Routes.allowedMethods()) // registering routes to the application
+  .use(ui(swaggerDocument, '/swagger')) 
 
 app.listen(process.env.SERVER_PORT, () => console.log('Server running at: http://' + process.env.SERVER_ADDRESS))
