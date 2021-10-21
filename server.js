@@ -1,7 +1,8 @@
 const Koa = require('koa')
 const Routes = require('./src/routes/routes')
 
-//require('./websocket/websocket-server');
+require('./websocket-server');
+
 
 const app = new Koa()
 
