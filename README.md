@@ -1,6 +1,6 @@
 # My Avalanche Koa API Project
 
-_Visit www.hapi.dev for more information about Koa._
+_Visit www.koajs.com for more information about Koa._
 
 ## To install:
 
