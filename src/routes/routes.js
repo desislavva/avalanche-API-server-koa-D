@@ -3,6 +3,7 @@ const koaRouter = require('@koa/router')
 const blocks = require('../controllers/blocks');
 const transactions = require('../controllers/transactions');
 const network = require('../controllers/network');
+const address = require('../controllers/address');
 
 const router = new koaRouter();
 
@@ -60,9 +61,12 @@ router.get('/blocks/number/:blocknumber', async ctx => {
     ctx.body = result;
  });
  
-
-
-
-
  /////////////// ADDRESS ///////////////////
+
+ router.get('/address/hash/:hash', async ctx => {
+    const result =  await address.getAddressInfoByHash(ctx);
+    ctx.body = result;
+ });
+
+
 module.exports = router;
